@@ -76,7 +76,7 @@ startBtn.addEventListener('click', () => {
     }
     const { days, hours, minutes, seconds } = convertMs(diff);
 
-    daysEl.textContent = String(days);
+    daysEl.textContent = addLeadingZero(days);
     hoursEl.textContent = addLeadingZero(hours);
     minutesEl.textContent = addLeadingZero(minutes);
     secondsEl.textContent = addLeadingZero(seconds);
